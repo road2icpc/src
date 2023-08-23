@@ -1,5 +1,7 @@
-// Li-Chao tree
-// insert/query with (l, r) = (0, size)
+//# Title: Li-Chao tree
+//# Description: Contianer of lines, online insertion/querying. Retrieve the line $f$ with minimum $f(x)$ for a given $x$. 
+//# Usage: \texttt{LCT lct(n); lct.insert(line, 0, n); lct.query(x, 0, n);}
+//# Complexity: $\mathcal{O}(\log n)$ per insertion/query
 
 //@ tested on:
 //@  1. https://cses.fi/problemset/task/2084/
@@ -8,7 +10,7 @@
 struct Line { ll a, b; ll f(ll x) { return a * x + b; } };
 constexpr const Line LINF { 0, 1LL << 60 };
 struct LCT {
-	vector <Line> v; // add coordinate compression by converting v[x] to v[conert(x)]
+	vector <Line> v; // coord-compression: modify v[x] -> v[conert(x)]
 	LCT(int size) { v.resize(size + 1, LINF); }
 	void insert(Line line, int l, int r) {
 		if (l > r) return;
