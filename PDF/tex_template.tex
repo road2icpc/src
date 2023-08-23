@@ -1,0 +1,100 @@
+\documentclass[8pt]{extarticle}
+\usepackage[top=1cm, bottom=1cm, left=0.5cm, right=0.5cm, headheight=15pt, headsep=0.3cm, landscape, a4paper]{geometry}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{setspace}
+\setstretch{0.83}
+\usepackage{fix-cm}
+\usepackage{parskip}
+\usepackage{color}
+
+\setlength{\columnseprule}{0.5pt}
+\renewcommand{\columnseprulecolor}{\color{black}}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\makeatletter
+\let\oldsection\section
+\renewcommand{\section}[1]{\oldsection*{\huge #1}\gdef\currentsectionname{#1}}
+\makeatother
+
+\lhead{Team name}
+\rhead{\thepage}
+\chead{\currentsectionname}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% subsection style
+\titleformat{name=\subsection}[block]{\normalfont\large\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{1ex}{1ex}[0pt]
+
+% dashed line and hash value command
+\newcommand{\hashlined}[1]{
+    \hfill \smash{\raisebox{-0.15cm}{\tiny \texttt{#1}}}\\[-0.5ex]
+    \noindent\tikz{\draw[dash pattern=on 4pt off 2pt] (0,0) -- (\linewidth,0);}\\[-1ex]
+}
+
+% solid line command
+\newcommand{\solidline}{\noindent\rule{\linewidth}{0.4mm}}
+
+% better carets and tildes
+\newcommand*{\caret}{%
+  \begingroup
+    \fontencoding{T1}%
+    \fontfamily{pcr}%
+    \selectfont
+    \string^%
+  \endgroup
+}
+\renewcommand*{\tilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+
+\lstset{
+	language=C++,
+    basicstyle=\fontsize{6}{6}\selectfont\ttfamily, 
+    breaklines=true,
+	tabsize=2,
+	showstringspaces=false,
+	commentstyle=\color{olive},
+	inputencoding=utf8,
+	showtabs=false,
+	showstringspaces=false,
+	showspaces=false,
+	keepspaces=true,
+	breaklines=true,
+	emptylines=*1,
+	breakatwhitespace=false,
+	keywordstyle=\color{blue},
+	stringstyle=\color{magenta},
+	literate={^}{\caret}{1} {~}{\tilde}{1},
+	% morekeywords={},
+    aboveskip=-3pt,
+    belowskip=-3pt
+}
+
+\lstdefinelanguage{raw}{}
+
+\newcommand{\frontpage}{
+	\pagestyle{empty}
+	\setcounter{page}{0}
+	\begin{center}
+		\strut
+		\vspace{3cm}\\
+		\includegraphics[width=3cm]{KU-logo.png}\\
+		{\fontsize{25}{30}\selectfont University of Openhagen\\}
+		\vspace{0.5cm}
+		{\fontsize{60}{60}\selectfont Team Name\\}
+		\vspace{0.5cm}
+		{\huge Elias Rasmussen Lolck, Thor Vejen Eriksen, William Bille Meyling\\}
+		\vfill
+		{\fontsize{21}{25}\selectfont E.g. North-Western European Regional Contest}\\
+		\vspace{0.5cm}
+		{\huge \today}\\
+		\vspace{1cm}
+	\end{center}
+	\clearpage
+	\pagestyle{fancy}
+}
