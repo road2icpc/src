@@ -1,0 +1,4 @@
+#!/bin/sh
+
+setxkbmap -option
+xset r rate 500 35
