@@ -1,5 +1,5 @@
 //# Title: Li-Chao tree
-//# Description: Contianer of lines, online insertion/querying. Retrieve the line $f$ with minimum $f(x)$ for a given $x$. 
+//# Description: Contianer of lines, online insertion/querying. Retrieve the line $f$ with minimum $f(x)$ for a given $x$.
 //# Usage: \texttt{LCT lct(n); lct.insert(line, 0, n); lct.query(x, 0, n);}
 //# Complexity: $\mathcal{O}(\log n)$ per insertion/query
 
