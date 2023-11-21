@@ -1,10 +1,10 @@
 //# Title: Fenwick tree
 //# Description: Computes prefix sums and single element updates. Uses 0-indexing.
-//# Usage: \texttt{...}
+//# Usage: \texttt{Fen f(n); f.update(ind, val); f.query(ind); f.lower_bound(sum);}
 //# Complexity: $\mathcal{O}(\log n)$ per update/query
 
 //@ tested on:
-//@  1. ???
+//@  1. https://cses.fi/problemset/task/1648/
 
 struct Fen {
 	vector <ll> v;
