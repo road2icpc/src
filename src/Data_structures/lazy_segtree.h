@@ -1,6 +1,6 @@
 //# Title: Lazy segment tree
-//# Description: Zero-indexed, bounds are [l, r), operations can be modified. $\mathcal{O}(\log n)$ find_first and the like can be implemented by checking bounds, then checking left tree, then right tree, recursively.
-//# Usage: \texttt{Lazy_segtree seg(n); seg.update(l, r, val); seg.query(l, r);}
+//# Description: Zero-indexed, bounds are [l, r), operations can be modified. $\mathcal{O}(\log n)$ find\_first and the like can be implemented by checking bounds, then checking left tree, then right tree, recursively.
+//# Usage: \texttt{Lazy\_segtree seg(n); seg.update(l, r, val); seg.query(l, r);}
 //# Complexity: $\mathcal{O}(\log n)$ per update/query
 
 //@ tested on:

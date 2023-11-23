@@ -1,5 +1,5 @@
 //# Title: Treap
-//# Description: Yeeted from kactl. A short self-balancing tree. It acts as a sequential container with log-time splits/joins, and is easy to augment with additional data.
+//# Description: Yoinked from kactl. A short self-balancing tree. It acts as a sequential container with log-time splits/joins, and is easy to augment with additional data.
 //# Complexity: $\mathcal{O}(\log n)$ operations.
 
 struct Node {

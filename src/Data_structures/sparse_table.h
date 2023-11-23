@@ -1,5 +1,5 @@
 //# Title: Sparse table
-//# Description: Yeeted from kactl. Classic sparse table, implemented with range minimum queries, can be modified.
+//# Description: Yoinked from kactl. Classic sparse table, implemented with range minimum queries, can be modified.
 //# Usage: \texttt{Sparse s(vec); s.query(a, b);}
 //# Complexity: $\mathcal{O}(\mid V \mid \log \mid V \mid + Q)$.
 

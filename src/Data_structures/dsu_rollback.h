@@ -1,5 +1,5 @@
 //# Title: Rollback Union Find
-//# Description: Yeeted from kactl. Disjoint-set data structure with undo. If undo is not needed, skip st, time() and rollback().
+//# Description: Yoinked from kactl. Disjoint-set data structure with undo. If undo is not needed, skip st, time() and rollback().
 //# Usage: \texttt{int t = uf.time(); ...; uf.rollback(t);}
 //# Complexity: $\mathcal{O}(\log n)$.
 

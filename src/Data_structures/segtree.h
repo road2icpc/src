@@ -1,7 +1,7 @@
 //# Title: Segment tree
-//# Description: Zero-indexed, bounds are [l, r), operations can be modified. $\mathcal{O}(\log n)$ find_first and the like can be implemented by checking bounds, then checking left tree, then right tree, recursively.
+//# Description: Zero-indexed, bounds are [l, r), operations can be modified. $\mathcal{O}(\log n)$ find\_first and the like can be implemented by checking bounds, then checking left tree, then right tree, recursively.
 //# Usage: \texttt{Segtree seg(n); seg.update(ind, val); seg.query(l, r);}
-//# Complexity: $\mathcal{O}(\log n)$ per update/query
+//# Complexity: $\mathcal{O}(\log n)$ per update/query.
 
 //@ tested on:
 //@  1. https://cses.fi/problemset/task/1648/
