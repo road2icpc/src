@@ -28,4 +28,3 @@ struct LCT {
 	}
 	Line best_of(Line a, Line b, ll x) { return a.f(x) < b.f(x) ? a : b; }
 };
-

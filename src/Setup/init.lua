@@ -30,3 +30,12 @@ keymap("v", "p", "\"_dP", ops)
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+local function hashCurrentBuffer()
+    local buffer_content = table.concat(vim.api.nvim_buf_get_lines(0, 0, -1, false), "\n")
+    local command = "echo '"..buffer_content.."' | cpp -dD -P -fpreprocessed | tr -d '[:space:]' | md5sum | cut -c-6"
+    local hash = vim.fn.system(command)
+    hash = hash:gsub("%s+", "")
+    print("Buffer Hash: " .. hash)
+end
+vim.api.nvim_create_user_command('Hash', hashCurrentBuffer, {})

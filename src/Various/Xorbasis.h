@@ -1,5 +1,5 @@
 //# Title: Xor Basis
-//# Description: basis of vectors in Z^d_{2}
+//# Description: basis of vectors in $Z^d_{2}$
 
 int basis[d]; // basis[i] keeps the mask of the vector whose f value is i
 int sz; // Current size of the basis

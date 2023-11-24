@@ -1,5 +1,5 @@
 //# Title: Linear Recurrences
-//# Description: Having a linear recurrence of the form f(n) = a_1 * f(n-1) + a_2 * f(n - 2) .. can be solved in log time with matrix exponentation.
+//# Description: Having a linear recurrence of the form $f(n) = a_1 \cdot f(n-1) + a_2 \cdot f(n - 2) \cdots$ can be solved in log time with matrix exponentation.
 
 #define Matrix vector<vector<ll>>
 const ll m = 1000000007;
