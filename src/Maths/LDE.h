@@ -1,6 +1,7 @@
-/*
-# Linear Diophantine Equation
+//# Title: Linear Diophantine Equation
+//# Description: See below
 
+/*
 A Linear Diophantine Equation (in two variables) is an equation of the general form:
 
 $$ax + by = c$$

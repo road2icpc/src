@@ -1,3 +1,6 @@
+//# Title: Dynamic Convex Hull
+//# Description: Supports building a convex hull one point at a time. Viewing the convex hull along the way.
+
 struct point {
     ll x, y;
     point(ll x=0, ll y=0): x(x), y(y) {}

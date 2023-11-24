@@ -1,9 +1,8 @@
-// basis of vectors in Z^d_{2}
+//# Title: Xor Basis
+//# Description: basis of vectors in Z^d_{2}
 
 int basis[d]; // basis[i] keeps the mask of the vector whose f value is i
-
 int sz; // Current size of the basis
-
 void insertVector(int mask) {
 	for (int i = 0; i < d; i++) {
 		if ((mask & 1 << i) == 0) continue; // continue if i != f(mask)
