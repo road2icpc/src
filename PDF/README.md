@@ -2,7 +2,7 @@
 With content from `../src/`:
 
 ```bash
-./make_pdf.sh ../src <output_name>.pdf
+./make_pdf.sh ../src <config_filepath> <output_name>.pdf
 ```
 
 # Using hash script

@@ -1,13 +1,19 @@
-if [ $# -ne 2 ]; then
-	echo "Usage: make_pdf.sh <path to content directory> <output file name>"
+if [ $# -ne 3 ]; then
+	echo "Usage: make_pdf.sh <path to content directory> <path to config file> <output file name>"
 	exit 1
 fi
 
 content_dir=$(realpath "$1")
-output_file="$2"
+config_file=$(realpath "$2")
+output_file="$3"
 
 if [ ! -d "$content_dir" ]; then
 	echo "Error: given content directory ('$content_dir') does not exist"
+	exit 1
+fi
+
+if [ ! -f "$config_file" ]; then
+	echo "Error: given config file ('$config_file') does not exist"
 	exit 1
 fi
 
@@ -28,7 +34,7 @@ fi
 
 mkdir -p bin
 
-python3 make_tex.py "$content_dir" > bin/content.tex
+python3 make_tex.py "$content_dir" "$config_file" > bin/content.tex
 
 if [ $? -ne 0 ]; then
 	echo "Error: failed to generate tex file"
