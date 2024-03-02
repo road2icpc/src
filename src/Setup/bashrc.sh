@@ -13,3 +13,4 @@ dc() {
 	command="g++ -Wshadow -Wall $1 -o $base_name -g -fsanitize=address,undefined -D_GLIBCXX_DEBUG -std=c++2a -Wfatal-errors"
 	$command
 }
+set -o vi
