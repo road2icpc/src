@@ -10,6 +10,7 @@ xset r rate 500 35
 # debug compile (C++):
 dc() {
 	base_name=$(basename "$1" .cpp)
-	command="g++ -Wshadow -Wall $1 -o $base_name -g -fsanitize=address,undefined -D_GLIBCXX_DEBUG -std=c++2a"
+	command="g++ -Wshadow -Wall $1 -o $base_name -g -fsanitize=address,undefined -D_GLIBCXX_DEBUG -std=c++2a -Wfatal-errors"
 	$command
 }
+set -o vi
