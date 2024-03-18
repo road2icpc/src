@@ -1,5 +1,3 @@
--- the entire init.lua from before, pick and choose:
-
 local options = {
   cmdheight = 1,
   ignorecase = true,
