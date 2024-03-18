@@ -18,3 +18,6 @@ The following are used by `make_pdf.sh`:
 - `KU-logo.png`
 - `make_tex.py`
 - `tex_template.tex`
+
+# TRD rules
+EUC 2024: [https://euc.icpc.global/home-2024/trd-instructions/](link)
