@@ -53,6 +53,8 @@ def parse_source_code(path: str) -> Source_sections:
 		sections["title"] = os.path.splitext(os.path.basename(path))[0] + ".sh"
 	elif os.path.splitext(path)[1] == ".lua":
 		sections["title"] = os.path.splitext(os.path.basename(path))[0] + ".lua"
+	elif os.path.splitext(path)[1] == "vimrc" or path.endswith("vimrc"):
+		sections["title"] = os.path.splitext(os.path.basename(path))[0]
 	current_section = None
 	for line in lines:
 		if line.strip().lower().startswith("//#"):
@@ -88,7 +90,7 @@ def find_files(root: str) -> dict[str, list[str]]:
 	files = {}
 	for dirpath, dirnames, filenames in os.walk(root):
 		for filename in sorted(filenames):
-			if filename.endswith(".h") or filename.endswith(".cpp") or filename.endswith(".sh") or filename.endswith(".lua"):
+			if filename.endswith(".h") or filename.endswith(".cpp") or filename.endswith(".sh") or filename.endswith(".lua") or filename.endswith("vimrc"):
 				full_path = os.path.join(dirpath, filename)
 				relative_path = os.path.relpath(full_path, root)
 				path_parts = relative_path.split(os.path.sep)
@@ -122,6 +124,8 @@ def source_to_tex(source: Source_sections):
 		result += "\\begin{lstlisting}[language=bash]\n"
 	elif source.file_type == ".lua":
 		result += "\\begin{lstlisting}\n"
+	else:
+		result += "\\begin{lstlisting}[language=raw]\n"
 	result += source.source_code + "\n"
 	result += "\\end{lstlisting}\n"
 	result += "\\solidline\n"
