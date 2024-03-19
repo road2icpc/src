@@ -1,6 +1,6 @@
 //# Title: Persistent segment tree
-//# Description: Zero-indexed, bounds are [l, r), operations can be modified. $\mathcal{O}(\log n)$ find\_first and the like can be implemented by checking bounds, then checking left tree, then right tree, recursively.
-//# Usage: \texttt{Node* root = build(arr, 0, n); Node* another_root = update(root, ind, val, 0, 0, n); query(some_root, l, r, 0, n).val; Node* empty_root = nullptr; Node* another_version = update(empty_root, ind, val, 0, 0, n);}
+//# Description: Zero-indexed, bounds are [l, r), operations can be modified. \texttt{update(...)} returns a pointer to a new tree with the applied update, all other trees remain unchanged. $\mathcal{O}(\log n)$ find\_first and the like can be implemented by checking bounds, then checking left tree, then right tree, recursively.
+//# Usage: \texttt{Node* root = build(arr, 0, n); Node* another\_root = update(root, ind, val, 0, 0, n); query(some\_root, l, r, 0, n).val; Node* empty\_root = nullptr; Node* another\_version = update(empty\_root, ind, val, 0, 0, n);}
 //# Complexity: $\mathcal{O}(\log n)$ per update/query, $\mathcal{O}(n)$ per build
 
 //@ tested on:
