@@ -49,12 +49,16 @@ def parse_source_code(path: str) -> Source_sections:
 		"complexity": "",
 		"hash": "",
 	}
+	is_tex = False
 	if os.path.splitext(path)[1] == ".sh":
 		sections["title"] = os.path.splitext(os.path.basename(path))[0] + ".sh"
 	elif os.path.splitext(path)[1] == ".lua":
 		sections["title"] = os.path.splitext(os.path.basename(path))[0] + ".lua"
 	elif os.path.splitext(path)[1] == "vimrc" or path.endswith("vimrc"):
 		sections["title"] = os.path.splitext(os.path.basename(path))[0]
+	elif os.path.splitext(path)[1] == ".tex":
+		sections["title"] = os.path.splitext(os.path.basename(path))[0] + ".tex"
+		is_tex = True
 	current_section = None
 	for line in lines:
 		if line.strip().lower().startswith("//#"):
@@ -82,7 +86,7 @@ def parse_source_code(path: str) -> Source_sections:
 		usage = sections["usage"],
 		complexity = sections["complexity"],
 		source_code = source_code,
-		hash_str = get_hash(source_code),
+		hash_str = "" if is_tex else get_hash(source_code),
 		file_type = os.path.splitext(path)[1]
 	)
 
@@ -90,7 +94,7 @@ def find_files(root: str) -> dict[str, list[str]]:
 	files = {}
 	for dirpath, dirnames, filenames in os.walk(root):
 		for filename in sorted(filenames):
-			if filename.endswith(".h") or filename.endswith(".cpp") or filename.endswith(".sh") or filename.endswith(".lua") or filename.endswith("vimrc"):
+			if filename.endswith(".h") or filename.endswith(".cpp") or filename.endswith(".sh") or filename.endswith(".lua") or filename.endswith("vimrc") or filename.endswith(".tex"):
 				full_path = os.path.join(dirpath, filename)
 				relative_path = os.path.relpath(full_path, root)
 				path_parts = relative_path.split(os.path.sep)
@@ -117,17 +121,20 @@ def source_to_tex(source: Source_sections):
 		result += addition
 		if addition != conditional_additions[-1]:
 			result += "\\\\\n"
-	result += "\\hashlined{" + get_hash(source.source_code) + "}"
-	if source.file_type == ".h" or source.file_type == ".cpp":
-		result += "\\begin{lstlisting}[language=C++]\n"
-	elif source.file_type == ".sh":
-		result += "\\begin{lstlisting}[language=bash]\n"
-	elif source.file_type == ".lua":
-		result += "\\begin{lstlisting}\n"
+	result += "\\hashlined{" + source.hash_str + "}"
+	if source.file_type == ".tex":
+		result += source.source_code + "\n"
 	else:
-		result += "\\begin{lstlisting}[language=raw]\n"
-	result += source.source_code + "\n"
-	result += "\\end{lstlisting}\n"
+		if source.file_type == ".h" or source.file_type == ".cpp":
+			result += "\\begin{lstlisting}[language=C++]\n"
+		elif source.file_type == ".sh":
+			result += "\\begin{lstlisting}[language=bash]\n"
+		elif source.file_type == ".lua":
+			result += "\\begin{lstlisting}\n"
+		else:
+			result += "\\begin{lstlisting}[language=raw]\n"
+		result += source.source_code + "\n"
+		result += "\\end{lstlisting}\n"
 	result += "\\solidline\n"
 	return result
 
