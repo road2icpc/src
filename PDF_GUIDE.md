@@ -35,7 +35,7 @@ Comments like below are ignored entirely and can be used to communicate informat
 //@ blah blah blah
 ```
 
-[>>> see example! <<<](./src/Data_Structures/DSU.h)
+[>>> see example! <<<](./src/Data_structures/DSU.h)
 
 Normal comments are left in the code as is.
 
