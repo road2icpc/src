@@ -73,7 +73,9 @@
 	literate={^}{\caret}{1} {~}{\tilde}{1},
 	% morekeywords={},
     aboveskip=-3pt,
-    belowskip=-3pt
+    belowskip=-3pt,
+	escapeinside={(*@}{@*)},
+	xleftmargin=0.5em,
 }
 
 \lstdefinelanguage{raw}{}
@@ -99,3 +101,5 @@
 	\clearpage
 	\pagestyle{fancy}
 }
+
+\newcommand{\customtext}[1]{\llap{\smash{\raisebox{0ex}[0pt][0pt]{\scalebox{.7}{\texttt{#1}}}\hspace{-0.30cm}}}}

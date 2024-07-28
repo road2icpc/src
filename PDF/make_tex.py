@@ -13,6 +13,7 @@ class Source_sections:
 	complexity: str
 	source_code: str
 	hash_str: str
+	hashes: dict
 	file_type: str
 
 def get_hash(content: str) -> str:
@@ -80,15 +81,23 @@ def parse_source_code(path: str) -> Source_sections:
 	while len(code_lines) > 0 and not code_lines[-1].strip():
 		code_lines.pop()
 	source_code = "\n".join(code_lines)
-	return Source_sections(
+	res = Source_sections(
 		title = sections["title"],
 		description = sections["description"],
 		usage = sections["usage"],
 		complexity = sections["complexity"],
 		source_code = source_code,
 		hash_str = "" if is_tex else get_hash(source_code),
+		hashes = {},
 		file_type = os.path.splitext(path)[1]
 	)
+	acc_str = ""
+	line_idx = 0
+	for line in code_lines:
+		acc_str += line
+		res.hashes[line_idx] = get_hash(acc_str)
+		line_idx += 1
+	return res
 
 def find_files(root: str) -> dict[str, list[str]]:
 	files = {}
@@ -133,7 +142,17 @@ def source_to_tex(source: Source_sections):
 			result += "\\begin{lstlisting}\n"
 		else:
 			result += "\\begin{lstlisting}[language=raw]\n"
-		result += source.source_code + "\n"
+		code = "(*@\customtext{" + source.hashes[0] + "}@*)  " + source.source_code
+		tmp_code = ""
+		j = 1
+		for i in range(len(code)):
+			if code[i] == '\n':
+				tmp_code += "\n(*@\customtext{" + source.hashes[j] + "}@*)  "
+				j += 1
+			else:
+				tmp_code += code[i]
+		code = tmp_code
+		result += code + "\n"
 		result += "\\end{lstlisting}\n"
 	result += "\\solidline\n"
 	return result
