@@ -3,7 +3,7 @@ template code library
 
 # TODO
 - Add to TRD
-    - ...
+    - Add prefix hash sum
 
 # Docker setup
 - cd into the docker-setup directory.
