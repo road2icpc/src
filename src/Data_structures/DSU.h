@@ -6,6 +6,8 @@
 //@ tested on:
 //@  1. https://judge.yosupo.jp/problem/unionfind
 
+#pragma once
+
 struct Dsu {
 	vi p, rank;
 	Dsu(int n) : p(n), rank(n, 0) {

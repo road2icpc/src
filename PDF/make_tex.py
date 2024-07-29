@@ -75,7 +75,12 @@ def parse_source_code(path: str) -> Source_sections:
 					sections[current_section] += " " + section_content
 			elif current_section:
 				sections[current_section] += " " + line.strip()[3:].strip()
-	code_lines = [line for line in lines if not line.strip().startswith(("//#", "//@"))]
+	code_lines = [line for line in lines if
+		not line.strip().startswith(("//#", "//@")) and
+		not line.strip().replace(" ", "").startswith("#pragmaonce")]
+	for i in range(len(code_lines)):
+		if code_lines[i].strip().startswith("#include"):
+			code_lines[i] = "// " + code_lines[i]
 	while len(code_lines) > 0 and not code_lines[0].strip():
 		code_lines.pop(0)
 	while len(code_lines) > 0 and not code_lines[-1].strip():
