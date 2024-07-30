@@ -1,0 +1,147 @@
+# TBA
+
+## Data structures
+- [x] DSU
+- [ ] persistent DSU
+- [ ] LCT
+- [ ] ELCT
+- [ ] \*persistent LCT
+- [ ] \*persistent ELCT
+- [ ] segtree
+- [ ] lazy segtree
+- [ ] persistent segtree
+- [ ] fenwick tree
+- [ ] fast hash map
+- [ ] ordered map/set
+- [ ] \*multi-dimensional segtree (implicit)
+- [ ] treap
+- [ ] wavelet tree
+- [ ] \*sparse table
+- [ ] matrix class with good constants
+
+## Geometry
+- [ ] 3d hull
+- [ ] circle-circle intersection
+- [ ] circle-line intersection
+- [ ] circle-polygon intersection
+- [ ] two-circle tangents
+- [ ] triangle circumcircle
+- [ ] closest pair of points
+- [ ] convex hull
+- [ ] delaunay triangulation
+- [ ] dynamic convex hull (with insertion)
+- [ ] hull diameter
+- [ ] is point inside polygon
+- [ ] KD-tree
+- [ ] point-line distance
+- [ ] line-hull intersection
+- [ ] line-line intersection
+- [ ] Line-projection/-reflection
+- [ ] linear transformation
+- [ ] Manhattan-MST
+- [ ] minimum enclosing circle
+- [ ] is on segment
+- [ ] point class
+- [ ] point class 3D
+- [ ] point inside hull
+- [ ] polygon area
+- [ ] polygon center
+- [ ] polygon cut
+- [ ] polygon union
+- [ ] polyhedron volume
+- [ ] point-linesegment distance
+- [ ] linesegment-linesegmentintersection
+- [ ] side of
+- [ ] spherical distance
+ 
+## Math
+- [ ] CRT
+- [ ] determinant
+- [ ] \*Normal Sieve of Eratosthenes
+- [ ] fast Sieve of Eratosthenes
+- [ ] Extended Euclid
+- [ ] FFT (+ conv)
+- [ ] FFT (arbitrary) mod (+ conv)
+- [ ] NTT (\*fast version instead) (+ conv)
+- [ ] Gauss Jordan
+- [ ] int (under mod) determinant
+- [ ] \*integrate
+- [ ] \*LDE (linear programming stuff)
+- [ ] linear recurrence solver
+- [ ] matrix inverse
+- [ ] matrix inverse mod
+- [ ] Miller-Rabin
+- [ ] $\mathcal{O}(n)$ mod inverse precalculation
+- [ ] fast int64 mod muliplication
+- [ ] phi function
+- [ ] phi function for integers $\in \{ 1 \cdots N \}$
+- [ ] polynomial class with helpers
+- [ ] polynomial roots finding
+- [ ] \*simplex
+- [ ] linear equation solver
+- [ ] linear equation (all solutions) finder
+- [ ] S.O.S. DP
+- [ ] XOR convolution
+- [ ] AND convolution
+- [ ] \*GCD convolution
+- [ ] \*LCM convolution
+- [ ] Grundy Sprague values
+- [ ] Discrete logarithm (under mod)
+ 
+## Graphs
+- [ ] articulation points finding
+- [ ] bridge finding
+- [ ] bellman-Ford
+- [ ] constant time LCA queries
+- [ ] biconnected components
+- [ ] DFS maximum bipartite matching
+- [ ] Dinic
+- [ ] directed MST
+- [ ] `max degree + 1`-edge coloring
+- [ ] minimum vertex coloring, deterministic but fast :)
+- [ ] minimum edge coloring, deterministic but fast :)
+- [ ] maximal clique finding, deterministic but fast :)
+- [ ] all maximal cliques finding, deterministic but fast :)
+- [ ] minimal vertex cover, deterministic but fast :)
+- [ ] \*minimum vertex coloring approx.
+- [ ] \*minimum edge coloring approx.
+- [ ] \*maximum clique finding approx.
+- [ ] \*minimal vertex cover approx.
+- [ ] cubic general matching with failure prob. $\frac{n}{\text{mod}}$
+- [ ] global min cut
+- [ ] HLD
+- [ ] link cut tree
+- [ ] min-cost-max-flow (modify to support double edges)
+- [ ] minimum vertex cover for bipartite graphs
+- [ ] SCC
+- [ ] topo sort
+- [ ] twosat
+- [ ] minimum (or maximum) weighted bipartite matching
+- [ ] \*$k$-shortest walks in sub-$\mathcal{O}(k \cdot (V + E))$
+- [ ] Eulerian tour
+- [ ] \*optimized hamiltonian cycle finding
+ 
+## Strings
+- [ ] Aho-Corasick
+- [ ] rolling hash
+- [ ] KMP
+- [ ] Manacher
+- [ ] minimal rotation
+- [ ] suffix array
+- [ ] suffix tree
+- [ ] suffix automaton
+- [ ] z-func
+- [ ] \*trie
+ 
+## Various
+- [ ] \*dynamic rolling hash structure (if no room: short `.tex` explanation)
+- [ ] bump allocator
+- [ ] even faster input
+- [ ] fast (pseudo-polynomial) knapsack
+- [ ] fast mod reduction
+- [ ] interval container
+- [ ] interval cover
+- [ ] Knuth DP
+- [ ] LIS
+- [ ] small ptr
+- [ ] XOR basis
