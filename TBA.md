@@ -90,7 +90,7 @@
  
 ## Graphs
 - [ ] articulation points finding
-- [ ] bridge finding
+- [x] bridge finding
 - [ ] bellman-Ford
 - [ ] constant time LCA queries
 - [ ] biconnected components
