@@ -60,7 +60,7 @@
 - [ ] \*Normal Sieve of Eratosthenes
 - [ ] fast Sieve of Eratosthenes
 - [ ] Extended Euclid
-- [ ] FFT (+ conv)
+- [x] FFT (+ conv)
 - [ ] FFT (arbitrary) mod (+ conv)
 - [ ] NTT (\*fast version instead) (+ conv)
 - [ ] Gauss Jordan
