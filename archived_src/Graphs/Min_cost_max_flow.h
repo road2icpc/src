@@ -1,5 +1,5 @@
-//# Title: Minimum cost maximum flow
-//# Description: Yoinked from kactl. \texttt{cap[i][j] != cap[j][i]} is allowed; double edges are not. If costs can be negative, call \texttt{setpi} before \texttt{maxflow}, but note that negative cost cycles are not supported. To obtain the actual flow, look at positive values only.
+//# Title: Minimum cost maximum flow (old version)
+//# Description: Yoinked from kactl. \texttt{cap[i][j] != cap[j][i]} is allowed; double edges are not. If costs can be negative, call \texttt{setpi} before \texttt{maxflow}, but note that negative cost cycles are not supported. To obtain the actual flow, look at positive values only. Note: duplicate edges and anti-parallel edges are not allowed.
 //# Complexity: $\mathcal{O}(E^2)$ \texttt{o\_O}.
 
 #include <bits/extc++.h>
