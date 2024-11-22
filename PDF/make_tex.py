@@ -99,7 +99,7 @@ def parse_source_code(path: str) -> Source_sections:
 	acc_str = ""
 	line_idx = 0
 	for line in code_lines:
-		acc_str += line
+		acc_str += line + "\n"
 		res.hashes[line_idx] = get_hash(acc_str)
 		line_idx += 1
 	return res
