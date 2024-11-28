@@ -91,7 +91,7 @@
 ## Graphs
 - [ ] articulation points finding
 - [ ] bridge finding
-- [ ] bellman-Ford
+- [x] bellman-Ford
 - [ ] constant time LCA queries
 - [ ] biconnected components
 - [ ] DFS maximum bipartite matching
