@@ -58,7 +58,7 @@
 - [ ] CRT
 - [ ] determinant
 - [ ] \*Normal Sieve of Eratosthenes
-- [ ] fast Sieve of Eratosthenes
+- [x] fast Sieve of Eratosthenes
 - [ ] Extended Euclid
 - [ ] FFT (+ conv)
 - [ ] FFT (arbitrary) mod (+ conv)
