@@ -89,7 +89,7 @@
 - [ ] Discrete logarithm (under mod)
  
 ## Graphs
-- [ ] articulation points finding
+- [x] articulation points finding
 - [ ] bridge finding
 - [ ] bellman-Ford
 - [ ] constant time LCA queries
