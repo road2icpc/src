@@ -147,12 +147,12 @@ def source_to_tex(source: Source_sections):
 			result += "\\begin{lstlisting}\n"
 		else:
 			result += "\\begin{lstlisting}[language=raw]\n"
-		code = "(*@\customtext{" + source.hashes[0] + "}@*)  " + source.source_code
+		code = "(*@\\customtext{" + source.hashes[0] + "}@*)  " + source.source_code
 		tmp_code = ""
 		j = 1
 		for i in range(len(code)):
 			if code[i] == '\n':
-				tmp_code += "\n(*@\customtext{" + source.hashes[j] + "}@*)  "
+				tmp_code += "\n(*@\\customtext{" + source.hashes[j] + "}@*)  "
 				j += 1
 			else:
 				tmp_code += code[i]
