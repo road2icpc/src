@@ -7,6 +7,8 @@
 //@  1. https://cses.fi/problemset/task/2084/
 //@  2. https://cses.fi/problemset/task/2085/
 
+#pragma once
+
 struct Line { ll a, b; ll f(ll x) { return a * x + b; } };
 constexpr const Line LINF { 0, 1LL << 60 };
 struct LCT {
