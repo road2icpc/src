@@ -1,0 +1,5 @@
+se ch=1 ic mouse=a sw=4 ts=4 nu rnu nuw=4 nowrap so=6 siso=8 fdm=indent fdl=99 tm=100
+ca Hash w !cpp -dD -P -fpreprocessed \| tr -d '[:space:]' \| md5sum \| cut -c-6
+vnoremap <silent> p "_dP
+vnoremap <silent> <A-Down> :m '>+1<CR>gv=gv
+vnoremap <silent> <A-Up> :m '<-2<CR>gv=gv
