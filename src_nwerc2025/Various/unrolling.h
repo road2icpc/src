@@ -1,10 +1,8 @@
-/**
- * Author: Simon Lindholm
- * Date: 2015-03-19
- * License: CC0
- * Source: me
- * Description:
- */
+//@ Author: Simon Lindholm
+//@ Date: 2015-03-19
+//@ License: CC0
+//@ Source: me
+//@ Description:
 
 //# Title: Manual loop unrolling
 //# Description: [kactl] Manual loop unrolling.

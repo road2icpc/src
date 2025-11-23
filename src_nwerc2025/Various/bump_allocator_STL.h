@@ -1,12 +1,10 @@
-/**
- * Author: Simon Lindholm
- * Date: 2016-07-23
- * License: CC0
- * Source: me
- * Description: BumpAllocator for STL containers.
- * Usage: vector<vector<int, small<int>>> ed(N);
- * Status: tested
- */
+//@ Author: Simon Lindholm
+//@ Date: 2016-07-23
+//@ License: CC0
+//@ Source: me
+//@ Description: BumpAllocator for STL containers.
+//@ Usage: vector<vector<int, small<int>>> ed(N);
+//@ Status: tested
 
 //# Title: Bump allocator (STL)
 //# Description: [kactl] See Bump allocator. This one is STL friendly.

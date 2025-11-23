@@ -1,13 +1,11 @@
-/**
- * Author: chilli
- * License: CC0
- * Source: Own work
- * Description: Read an integer from stdin. Usage requires your program to pipe in
- * input from file.
- * Usage: ./a.out < input.txt
- * Time: About 5x as fast as cin/scanf.
- * Status: tested on SPOJ INTEST, unit tested
- */
+//@ Author: chilli
+//@ License: CC0
+//@ Source: Own work
+//@ Description: Read an integer from stdin. Usage requires your program to pipe in
+//@ input from file.
+//@ Usage: ./a.out < input.txt
+//@ Time: About 5x as fast as cin/scanf.
+//@ Status: tested on SPOJ INTEST, unit tested
 
 //# Title: (very) fast input
 //# Description: [kactl] Fast input. Desperation when facing TLE on big input tasks.

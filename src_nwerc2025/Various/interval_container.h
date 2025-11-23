@@ -1,12 +1,10 @@
-/**
- * Author: Simon Lindholm
- * License: CC0
- * Description: Add and remove intervals from a set of disjoint intervals.
- * Will merge the added interval with any overlapping intervals in the set when adding.
- * Intervals are [inclusive, exclusive).
- * Time: O(\log N)
- * Status: stress-tested
- */
+//@ Author: Simon Lindholm
+//@ License: CC0
+//@ Description: Add and remove intervals from a set of disjoint intervals.
+//@ Will merge the added interval with any overlapping intervals in the set when adding.
+//@ Intervals are [inclusive, exclusive).
+//@ Time: O(\log N)
+//@ Status: stress-tested
 
 //# Title: Interval container
 //# Description: [kactl] Add and remove intervals [inclusive, exclusive). The maintained set has non-overlapping intervals at all times.
