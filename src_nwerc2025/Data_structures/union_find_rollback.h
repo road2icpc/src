@@ -5,10 +5,10 @@
 //@ Status: tested as part of DirectedMST.h
 
 //# Title: Union Find with Rollback
-//@ Description: [kactl] Disjoint-set data structure with undo.
-//@  If undo is not needed, skip st, time() and rollback().
-//@  Usage: int t = uf.time(); ...; uf.rollback(t);
-//@ Complexity: $O(\log(N))$
+//# Description: [kactl] Disjoint-set data structure with undo.
+//#  If undo is not needed, skip st, time() and rollback().
+//#  Usage: int t = uf.time(); ...; uf.rollback(t);
+//# Complexity: $O(\log(N))$
 
 #pragma once
 

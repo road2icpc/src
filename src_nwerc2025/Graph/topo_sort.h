@@ -4,11 +4,11 @@
 //@ Status: stress-tested
 
 //# Title: Topological Sort
-//@ Description: [kactl] Topological sorting. Given is an oriented graph.
-//@  Output is an ordering of vertices, such that there are edges only from left to right.
-//@  If there are cycles, the returned list will have size smaller than $n$ -- nodes reachable
-//@  from cycles will not be returned.
-//@ Complexity: $O(|V|+|E|)$
+//# Description: [kactl] Topological sorting. Given is an oriented graph.
+//#  Output is an ordering of vertices, such that there are edges only from left to right.
+//#  If there are cycles, the returned list will have size smaller than $n$ -- nodes reachable
+//#  from cycles will not be returned.
+//# Complexity: $O(|V|+|E|)$
 
 #pragma once
 
