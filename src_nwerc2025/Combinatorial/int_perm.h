@@ -7,7 +7,7 @@
 
 //# Title: Permutation to Int
 //# Description: [kactl] Given a permutation, returns the number of lexicographically strictly smaller permutations.
-//# Complexity: O(n), but returns a value that is O(n!)
+//# Complexity: $\mathcal{O}(n)$, but returns a value that is $\mathcal{O}(n!)$
 
 //@ tested on:
 //@	1. nothing :(

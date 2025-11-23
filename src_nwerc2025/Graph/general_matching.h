@@ -7,7 +7,7 @@
 //# Title: General Matching
 //# Description: [kactl] Matching for general graphs.
 //#  Fails with probability $N / mod$.
-//# Complexity: O(N^3)
+//# Complexity: $\mathcal{O}(N^3)$
 
 #pragma once
 

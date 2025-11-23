@@ -9,7 +9,7 @@
 //#  $(D + 1)$-coloring of the edges such that no neighboring edges share a color.
 //#  ($D$-coloring is NP-hard, but can be done for bipartite graphs by repeated matchings of
 //#  max-degree nodes.)
-//# Complexity: O(NM)
+//# Complexity: $\mathcal{O}(NM)$
 
 #pragma once
 

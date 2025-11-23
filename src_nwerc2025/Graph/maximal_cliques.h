@@ -8,7 +8,7 @@
 //# Description: [kactl] Runs a callback for all maximal cliques in a graph (given as a
 //#  symmetric bitset matrix; self-edges not allowed). Callback is given a bitset
 //#  representing the maximal clique.
-//# Complexity: O(3^{n/3}), much faster for sparse graphs
+//# Complexity: $\mathcal{O}(3^{n/3})$, much faster for sparse graphs
 
 #pragma once
 /// Possible optimization: on the top-most

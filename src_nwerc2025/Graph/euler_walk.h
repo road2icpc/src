@@ -11,7 +11,7 @@
 //#  Returns a list of nodes in the Eulerian path/cycle with src at both start and end, or
 //#  empty list if no cycle/path exists.
 //#  To get edge indices back, add .second to s and ret.
-//# Complexity: O(V + E)
+//# Complexity: $\mathcal{O}(V + E)$
 
 #pragma once
 

@@ -13,7 +13,7 @@
 //#  ts.setValue(2); // Var 2 is true
 //#  ts.solve(); // Returns true iff solvable
 //#  ts.values[0..N-1] holds the assigned values of the vars
-//# Complexity: O(N+E), where N is the number of boolean variables, and E is the number of implications.
+//# Complexity: $\mathcal{O}(N+E)$, where N is the number of boolean variables, and E is the number of implications.
 
 //@ tested on:
 //@	nothing :(

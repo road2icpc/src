@@ -11,7 +11,7 @@
 //#  cost[N][M], where cost[i][j] = cost for L[i] to be matched with R[j] and
 //#  returns (min cost, match), where L[i] is matched with
 //#  R[match[i]]. Negate costs for max cost. Requires $N \le M$.
-//# Complexity: O(N^2M)
+//# Complexity: $\mathcal{O}(N^2M)$
 
 #pragma once
 

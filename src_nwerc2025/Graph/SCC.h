@@ -12,7 +12,7 @@
 //#  in reverse topological order. comp[i] holds the component
 //#  index of a node (a component only has edges to components with
 //#  lower index). ncomps will contain the number of components.
-//# Complexity: O(E + V)
+//# Complexity: $\mathcal{O}(E + V)$
 
 #pragma once
 

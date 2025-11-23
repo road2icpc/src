@@ -6,7 +6,7 @@
 
 //# Title: Global Minimum Cut
 //# Description: [kactl] Find a global minimum cut in an undirected graph, as represented by an adjacency matrix.
-//# Complexity: O(V^3)
+//# Complexity: $\mathcal{O}(V^3)$
 
 #pragma once
 

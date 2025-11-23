@@ -8,7 +8,7 @@
 //# Title: Directed Minimum Spanning Tree (int Directed Graph)
 //# Description: [kactl] Finds a minimum spanning
 //#  tree/arborescence of a directed graph, given a root node. If no MST exists, returns -1.
-//# Complexity: O(E \log V)
+//# Complexity: $\mathcal{O}(E \log V)$
 
 #pragma once
 

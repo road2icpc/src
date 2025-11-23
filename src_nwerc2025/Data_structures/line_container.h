@@ -6,8 +6,8 @@
 
 //# Title: Line Container
 //# Description: [kactl] Container where you can add lines of the form kx+m, and query maximum values at points x.
-//#  Useful for dynamic programming (``convex hull trick'').
-//# Complexity: O(\log N)
+//# Useful for dynamic programming (``convex hull trick'').
+//# Complexity: $\mathcal{O}(\log N)$
 
 #pragma once
 

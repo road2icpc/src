@@ -16,7 +16,7 @@
 //#    ed[a].emplace_back(b, eid);
 //#    ed[b].emplace_back(a, eid++); }
 //#  bicomps([\&](const vi\& edgelist) {...});
-//# Complexity: O(E + V)
+//# Complexity: $\mathcal{O}(E + V)$
 
 #pragma once
 

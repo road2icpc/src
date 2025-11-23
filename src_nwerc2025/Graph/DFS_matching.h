@@ -18,7 +18,7 @@
 //#  the matching. $btoa[i]$ will be the match for vertex $i$ on the right side,
 //#  or $-1$ if it's not matched.
 //# Usage: vector<int> btoa(m, -1); dfsMatching(g, btoa);
-//# Complexity: O(VE)
+//# Complexity: $\mathcal{O}(VE)$
 
 #pragma once
 
