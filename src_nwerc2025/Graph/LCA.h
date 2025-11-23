@@ -1,0 +1,36 @@
+//@ Author: chilli, pajenegod
+//@ Date: 2020-02-20
+//@ License: CC0
+//@ Source: Folklore
+//@ Status: stress-tested
+
+//# Title: Lowest Common Ancestor
+//# Description: [kactl] Data structure for computing lowest common ancestors in a tree
+//#  (with 0 as root). C should be an adjacency list of the tree, either directed
+//#  or undirected.
+//# Complexity: $O(N \log N + Q)$
+
+#pragma once
+
+#include "../data-structures/RMQ.h"
+
+struct LCA {
+	int T = 0;
+	vector<int> time, path, ret;
+	RMQ<int> rmq;
+
+	LCA(vector<vector<int>>& C) : time(C.size()), rmq((dfs(C,0,-1), ret)) {}
+	void dfs(vector<vector<int>>& C, int v, int par) {
+		time[v] = T++;
+		for (int y : C[v]) if (y != par) {
+			path.push_back(v), ret.push_back(time[v]);
+			dfs(C, y, v);
+		}
+	}
+
+	int lca(int a, int b) {
+		if (a == b) return a;
+		tie(a, b) = minmax(time[a], time[b]);
+		return path[rmq.query(a, b)];
+	}
+};
