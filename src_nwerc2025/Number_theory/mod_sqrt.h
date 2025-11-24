@@ -6,7 +6,7 @@
 
 //# Title: Mod Square Root
 //# Description: [kactl] Tonelli-Shanks algorithm for modular square roots. Finds $x$ s.t. $x^2 = a \pmod p$ ($-x$ gives the other solution).
-//# Comlexity: O(\log^2 p) worst case, O(\log p) for most $p$
+//# Comlexity: $O(\log^2 p)$ worst case, $O(\log p)$ for most $p$
 
 #pragma once
 

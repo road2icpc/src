@@ -11,7 +11,7 @@
 //#  ($p_k/q_k$ alternates between $>x$ and $<x$.)
 //#  If $x$ is rational, $y$ eventually becomes $\infty$;
 //#  if $x$ is the root of a degree $2$ polynomial the $a$'s eventually become cyclic.
-//# complexity: O(\log N)
+//# Complexity: $O(\log N)$
 
 pair<ll, ll> approximate(ld x, ll N) {
 	ll LP = 0, LQ = 1, P = 1, Q = 0, inf = LLONG_MAX; ld y = x;

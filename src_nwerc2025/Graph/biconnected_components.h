@@ -10,12 +10,12 @@
 //#  are at least two internally disjoint paths between any two nodes (a cycle
 //#  exists through them). Note that a node can be in several components. An
 //#  edge which is not in a component is a bridge, i.e., not part of any cycle.
-//# Usage:
-//#  int eid = 0; ed.resize(N);
-//#  for each edge (a,b) {
-//#    ed[a].emplace_back(b, eid);
-//#    ed[b].emplace_back(a, eid++); }
-//#  bicomps([\&](const vi\& edgelist) {...});
+//@ Usage:
+//@  int eid = 0; ed.resize(N);
+//@  for each edge (a,b) {
+//@    ed[a].emplace_back(b, eid);
+//@    ed[b].emplace_back(a, eid++); }
+//@  bicomps([\&](const vi\& edgelist) {...});
 //# Complexity: $\mathcal{O}(E + V)$
 
 #pragma once

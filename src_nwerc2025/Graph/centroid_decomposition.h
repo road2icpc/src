@@ -1,7 +1,7 @@
 //# Title: Centroid decomposition
 //# Description: Computes a centroid decomposition and invokes the given callback in top-down depth-first order. Takes an adjacency list. See comment in case of disconnected graphs.
-//# Usage: \texttt{centroid_decomposition(adj, [] (int centroid) { ... }, optional_root);}
-//# complexity: $\mathcal{O}(n \log n)$ and exactly one callback invocation per vertex
+//@ Usage: \texttt{centroid_decomposition(adj, [] (int centroid) { ... }, optional_root);}
+//# Complexity: $\mathcal{O}(n \log n)$ and exactly one callback invocation per vertex
 
 #pragma once
 

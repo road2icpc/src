@@ -7,7 +7,7 @@
 //# Description: [kactl] Represents a forest of unrooted trees. You can add and remove
 //#  edges (as long as the result is still a forest), and check whether
 //#  two nodes are in the same tree.
-//# Complexity: All operations take amortized O(\log N).
+//# Complexity: All operations take amortized $O(\log N)$.
 
 #pragma once
 
