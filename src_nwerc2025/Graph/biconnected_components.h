@@ -13,6 +13,9 @@
 //#  then T is the block-cut tree.
 //# Complexity: $\mathcal{O}(E + V)$
 
+//@ tested on:
+//@   https://cses.fi/problemset/task/1705/
+
 #pragma once
 
 vector<vector<int>> bcomps(vector<vector<int>> &G, vector<bool> &art, vector<int> &id) {
