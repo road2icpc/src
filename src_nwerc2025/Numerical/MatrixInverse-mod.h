@@ -1,14 +1,17 @@
-/**
- * Author: Simon Lindholm
- * Date: 2016-12-08
- * Source: The regular matrix inverse code
- * Description: Invert matrix $A$ modulo a prime.
- * Returns rank; result is stored in $A$ unless singular (rank < n).
- * For prime powers, repeatedly set $A^{-1} = A^{-1} (2I - AA^{-1})\  (\text{mod }p^k)$ where $A^{-1}$ starts as
- * the inverse of A mod p, and k is doubled in each step.
- * Time: O(n^3)
- * Status: Slightly tested
- */
+//@ Author: Simon Lindholm
+//@ Date: 2016-12-08
+//@ Source: The regular matrix inverse code
+//@ Description: Invert matrix $A$ modulo a prime.
+//@ Returns rank; result is stored in $A$ unless singular (rank < n).
+//@ For prime powers, repeatedly set $A^{-1} = A^{-1} (2I - AA^{-1})\  (\text{mod }p^k)$ where $A^{-1}$ starts as
+//@ the inverse of A mod p, and k is doubled in each step.
+//@ Time: O(n^3)
+//@ Status: Slightly tested
+
+//# Title: Matrix Inversion under modulo
+//# Description: [kactl] Invert matrix $A$ modulo a prime. Returns rank; result is stored in $A$ unless singular (rank < n). For prime powers, repeatedly set $A^{-1} = A^{-1} (2I - AA^{-1})\  (\text{mod }p^k)$ where $A^{-1}$ starts as the inverse of A mod p, and k is doubled in each step.
+//# Complexity: $\mathcal{O}(n^3)$
+
 #pragma once
 
 #include "../number-theory/ModPow.h"

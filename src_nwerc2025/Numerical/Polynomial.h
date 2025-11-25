@@ -1,8 +1,10 @@
-/**
- * Author: David Rydh, Per Austrin
- * Date: 2003-03-16
- * Description:
- */
+//@ Author: David Rydh, Per Austrin
+//@ Date: 2003-03-16
+//@ Description:
+
+//# Title: Polynomial structure
+//# Description: [kactl]
+
 #pragma once
 
 struct Poly {

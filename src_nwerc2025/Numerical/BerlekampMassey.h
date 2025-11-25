@@ -1,17 +1,21 @@
-/**
- * Author: Lucian Bicsi
- * Date: 2017-10-31
- * License: CC0
- * Source: Wikipedia
- * Description: Recovers any $n$-order linear recurrence relation from the first
- * $2n$ terms of the recurrence.
- * Useful for guessing linear recurrences after brute-forcing the first terms.
- * Should work on any field, but numerical stability for floats is not guaranteed.
- * Output will have size $\le n$.
- * Usage: berlekampMassey({0, 1, 1, 3, 5, 11}) // {1, 2}
- * Time: O(N^2)
- * Status: bruteforce-tested mod 5 for n <= 5 and all s
- */
+//@ Author: Lucian Bicsi
+//@ Date: 2017-10-31
+//@ License: CC0
+//@ Source: Wikipedia
+//@ Description: Recovers any $n$-order linear recurrence relation from the first
+//@ $2n$ terms of the recurrence.
+//@ Useful for guessing linear recurrences after brute-forcing the first terms.
+//@ Should work on any field, but numerical stability for floats is not guaranteed.
+//@ Output will have size $\le n$.
+//@ Usage: berlekampMassey({0, 1, 1, 3, 5, 11}) // {1, 2}
+//@ Time: O(N^2)
+//@ Status: bruteforce-tested mod 5 for n <= 5 and all s
+
+//# Title: Berlekamp Massey
+//# Description: [kactl] Recovers any $n$-order linear recurrence relation from the first $2n$ terms of the recurrence. Useful for guessing linear recurrences after brute-forcing the first terms. Should work on any field, but numerical stability for floats is not guaranteed. Output will have size $\le n$.
+//# Usage: \texttt{BerlekampMassey(\{ 0, 1, 1, 3, 5, 11 \})} yields \texttt{\{ 1, 2 \}}.
+//# Complexity: $\mathcal{O}(N^2)$
+
 #pragma once
 
 #include "../number-theory/ModPow.h"

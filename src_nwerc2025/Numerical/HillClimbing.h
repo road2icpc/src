@@ -1,11 +1,13 @@
-/**
- * Author: Simon Lindholm
- * Date: 2015-02-04
- * License: CC0
- * Source: Johan Sannemo
- * Description: Poor man's optimization for unimodal functions.
- * Status: used with great success
- */
+//@ Author: Simon Lindholm
+//@ Date: 2015-02-04
+//@ License: CC0
+//@ Source: Johan Sannemo
+//@ Description: Poor man's optimization for unimodal functions.
+//@ Status: used with great success
+
+//# Title: Hill climbing
+//# Description: [kactl] Poor man's optimization for unimodal functions.
+
 #pragma once
 
 typedef array<double, 2> P;

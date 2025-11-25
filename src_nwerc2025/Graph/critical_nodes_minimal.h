@@ -1,10 +1,10 @@
 //# Title: Critical nodes on minimal path
 //# Description: Finds minimal-route necessary nodes in a directed weighted graph between two cities u, v. That is nodes that appears on every minimum-length path between u and v
 //# Usage:
-//#  critical(G) \\ G should be an directed unweighted adjacencylist.
+//#  \texttt{critical(G)} \\ G should be an directed unweighted adjacencylist.
 //#  returns a list with the indices of the critical nodes.
 //#  Returns an empty list if u and v are not in the same component.
-//# Complexity: $\mathcal{O}(N+E)$, where N is the number of nodes, and E is the number of edges.
+//# Complexity: $\mathcal{O}(N+E)$, where $N$ is the number of nodes, and $E$ is the number of edges.
 
 //@ tested on:
 //@  https://cses.fi/problemset/task/1203/

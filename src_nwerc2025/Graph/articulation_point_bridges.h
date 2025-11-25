@@ -1,10 +1,10 @@
 //# Title: Articulation points and Bridges
 //# Description: Finds articulation point and bridges in an undirected graph
 //# Usage:
-//#  cutpoints(G) \\ G should be an undirected unweighted adjacencylist.
+//#  \texttt{cutpoints(G)} \\ G should be an undirected unweighted adjacencylist.
 //#  art[i] is 1 if node i is an articulation point
 //#  brd contains a list of edges that are bridges (The edges are not necessarily given with the correct orientation)
-//# Complexity: $\mathcal{O}(N+E)$, where N is the number of nodes, and E is the number of edges.
+//# Complexity: $\mathcal{O}(N+E)$, where $N$ is the number of nodes, and $E$ is the number of edges.
 
 //@ tested on:
 //@	 https://cses.fi/problemset/task/2077

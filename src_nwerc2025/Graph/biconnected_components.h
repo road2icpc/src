@@ -6,11 +6,11 @@
 //#  correspond to checking if there exists a path from id[u] to id[v] in the
 //#  block-cut tree not going through id[w].
 //# Usage:
-//#  G should be an adjacenylist with edges both ways
-//#  vector<bool> art;
-//#  vector<int> id;
-//#  auto T = bcomps(G, art, id)
-//#  then T is the block-cut tree.
+//#  \texttt{G} should be an adjaceny list with edges both ways
+//#  \texttt{vector<bool> art;}
+//#  \texttt{vector<int> id;}
+//#  \texttt{auto T = bcomps(G, art, id)}
+//#  \texttt{then T is the block-cut tree.}
 //# Complexity: $\mathcal{O}(E + V)$
 
 //@ tested on:
