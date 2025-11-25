@@ -1,5 +1,5 @@
 //@ Author: Benjamin Qi, Andrew Cheng, Jack Lim
-//@ Date: ??
+//@ Date: 2025-10-02
 //@ License: CC0
 //@ Source: USACO-guide
 //@ Status: not tested
@@ -9,10 +9,13 @@
 //# Description:
 //#   Splits tree up in heavy and light paths, so a maximum of \log N
 //#   light paths are on path between two nodes, allows for efficient 
-//#   updates and queries on paths and subtrees at the same time.
+//#   updates and queries on paths and subtrees at the same time. 
+//#   Code supports any commutative operations on path and queries.
+//#   If order is important each heavy path should have two segtrees, 
+//#   and process should be updated to use the correct segtree operations.
 //# Usage:
 //#   Change MaxSegmentTree<T> depending on problem
-//#   HLD<T, VALS_IN_EDGES> hld(G); // T should be nodes used in segtree VALS_IN_EDGES should be true if the values are on the edge from the node to the parent
+//#   HLD<T, VALS_IN_EDGES> hld(G,R); // T should be nodes used in segtree VALS_IN_EDGES should be true if the values are on the edge from the node to the parent. R should be the root of the tree.
 //#   G should be an adjacency list for the tree
 //#   change query_path / modify_node to match the problem
 //# Complexity: \mathcal{O}(N + S) build time. N is the size of the tree and S is the time to build the Segtree, and \mathcal{O}(\log N \cdot F) per path query where F is the time of the segtree queries.
