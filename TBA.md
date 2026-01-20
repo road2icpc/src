@@ -114,7 +114,7 @@
 - [ ] min-cost-max-flow (modify to support double edges)
 - [ ] minimum vertex cover for bipartite graphs
 - [ ] SCC
-- [ ] topo sort
+- [x] topo sort
 - [ ] twosat
 - [ ] minimum (or maximum) weighted bipartite matching
 - [ ] \*$k$-shortest walks in sub-$\mathcal{O}(k \cdot (V + E))$
